@@ -88,28 +88,29 @@ export const ImageContainer = styled.div`
 
     img {
         position: relative;
+        align-items: center;
         right: 2.93rem;
 
-        width: 600px;
         height: auto;
 
     }
 
-    &::before{
-        content: '';
-        height: 100%;
-        width: 100%;
-        background-color: ${props => props.theme["base-color-second"]};
-        position: absolute;
-        top: -16.8%;
-        left: 16.7%;
-        z-index: 0;
-
-        border-radius: 0.25rem;
-    }
-
     @media (min-width: 1200px) {
         order: 1;
+
+
+        &::before{
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: ${props => props.theme["base-color-second"]};
+            position: absolute;
+            top: -16.8%;
+            left: 16.7%;
+            z-index: 0;
+
+            border-radius: 0.25rem;
+        }
     }
 `
 
@@ -144,6 +145,8 @@ export const Card = styled.div`
     border-radius: 0.25rem 0.25rem 0 0;
     text-align: center;
     transition: 0.3s;
+
+    cursor: pointer;
 
     &:hover {
         transform: translateY(-15px);

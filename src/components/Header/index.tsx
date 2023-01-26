@@ -1,7 +1,10 @@
 import { Container, Logo, Menu, NavContainer, Section, Title, ToggleContainer } from "./styles";
 import LogoWiki from "../../assets/wiki1.png";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { List, User, X } from "phosphor-react";
+
+import * as Dialog from '@radix-ui/react-dialog';
+import { ModalIdentifyUser } from "../ModalIdentifyUser";
 
 export function Header() {
     const [isMenu, setMenu] = useState(false);
@@ -22,9 +25,15 @@ export function Header() {
                             <Title href="#">Fotos</Title>
                         </Section>
                         <Section>
-                            <i>
-                                <User size={20} color={"black"}/>
-                            </i>
+                            <Dialog.Root>
+                                <Dialog.Trigger asChild>
+                                    <i>
+                                        <User size={20} color={"black"}/>
+                                    </i>
+                                </Dialog.Trigger>
+
+                                <ModalIdentifyUser />
+                            </Dialog.Root>
                         </Section>
                     </ul>
                 </Menu>

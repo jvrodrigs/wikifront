@@ -10,15 +10,15 @@ export const LineDivider = styled.div<Info>`
     ${props => props.side && css `
         background: linear-gradient(
             270deg,
-            hsl(var(--hue), 65%, 88%, 0.34),
-            hsl(var(--hue), 36%, 57%, 1)
+            hsl(171, 65%, 88%, 0.34),
+            hsl(171, 36%, 57%, 1)
         );
     `}
 
     ${props => !props.side && css `
         background: linear-gradient(
-            270deg, hsl(var(--hue), 36%, 57%, 1) 0%,
-            hsl(var(--hue), 65%, 88%, 0.34) 100%
+            270deg, hsl(171, 36%, 57%, 1) 0%,
+            hsl(171, 65%, 88%, 0.34) 100%
         );
     `}
 `

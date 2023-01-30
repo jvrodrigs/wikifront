@@ -16,10 +16,10 @@ export function Header() {
                 <Menu>
                     <ul>
                         <Section>
-                            <Title href="#">Recentes</Title>
+                            <Title href="/recents">Recentes</Title>
                         </Section>
                         <Section>
-                            <Title href="#">Mapa</Title>
+                            <Title href="/map">Mapa</Title>
                         </Section>
                         <Section>
                             <Title href="#">Fotos</Title>

@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 100%;
     --header-hei: 4.5rem;
     /* colors */
-    --hue: 225;
+    --hue: 171;
     /* HSL color mode */
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);

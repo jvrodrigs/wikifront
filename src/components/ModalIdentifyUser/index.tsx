@@ -16,7 +16,7 @@ export function ModalIdentifyUser(){
                     >
                         <User size={30} />
                         <h3>
-                            Veterano
+                            Cadastrado
                         </h3>
                     </ButtonIdentify>
 
@@ -25,7 +25,7 @@ export function ModalIdentifyUser(){
                     >
                         <UserPlus size={30} />
                         <h3>
-                            Novato
+                            Novo
                         </h3>
                     </ButtonIdentify>
                 </ContainerDescription>

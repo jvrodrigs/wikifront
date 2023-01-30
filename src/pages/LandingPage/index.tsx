@@ -4,6 +4,7 @@ import land from "../../assets/lanscape.svg";
 import { Line } from "../../components/DividerLine";
 import { Barricade, Camera, WifiHigh } from "phosphor-react";
 import { Footer } from "../../components/Footer";
+import { Recents } from "../../components/Recents";
 
 export function Page() {
     return(
@@ -72,6 +73,20 @@ export function Page() {
                             </Card>
                         </Cards>
                     </Container>
+                </SectionContainer>
+                
+                <Line side={false} />
+
+                <SectionContainer>
+                   <Container>
+                        <Grid>
+                            <header>
+                                <h3>Mais Recentes</h3>
+                                <p>Estas publicaçãoes foram feitas por nossos usuários do dia-a-dia. Com elas, você pode ver um pouco do que queremos entregar a todos!</p>
+                            </header>
+                        </Grid>
+                        <Recents />
+                   </Container>
                 </SectionContainer>
 
             </main>

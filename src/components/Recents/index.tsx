@@ -1,9 +1,7 @@
-import { Header } from "../../components/Header";
 import { ButtonCustom, Buttons, CarouselCtn, Container} from "./styles";
 import { useRef, useState } from "react";
 import { CaretDoubleLeft, CaretDoubleRight } from "phosphor-react";
 import { ItemCarousel } from "../../components/ItemCarousel";
-import { Line } from "../../components/DividerLine";
 
 export function Recents (){
     const carousel = useRef<HTMLDivElement | null>(null);
@@ -22,26 +20,22 @@ export function Recents (){
 
     return(
         <>
-            <Header />
-            <main>
-                <Line side={true} />
-                <Container>
-                    <CarouselCtn ref={carousel}>
-                        {Items.map( (i) => (
-                           <ItemCarousel key={i} info={i.toString()}/>
-                        ))}
-                    </CarouselCtn>
-                </Container>
-                <Buttons>
-                    <ButtonCustom onClick={handleLeftClick}>
-                        <CaretDoubleLeft size={24}/>
-                    </ButtonCustom>
+            <Container>
+                <CarouselCtn ref={carousel}>
+                    {Items.map( (i) => (
+                    <ItemCarousel key={i} info={i.toString()}/>
+                    ))}
+                </CarouselCtn>
+            </Container>
+            <Buttons>
+                <ButtonCustom onClick={handleLeftClick}>
+                    <CaretDoubleLeft size={24}/>
+                </ButtonCustom>
 
-                    <ButtonCustom onClick={handleRightClick}>
-                        <CaretDoubleRight size={24}/>
-                    </ButtonCustom>
-                </Buttons>
-            </main>
+                <ButtonCustom onClick={handleRightClick}>
+                    <CaretDoubleRight size={24}/>
+                </ButtonCustom>
+            </Buttons>
         </>
     )
 }

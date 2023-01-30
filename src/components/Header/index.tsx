@@ -16,13 +16,10 @@ export function Header() {
                 <Menu>
                     <ul>
                         <Section>
-                            <Title href="/recents">Recentes</Title>
+                            <Title href="#">Recentes</Title>
                         </Section>
                         <Section>
-                            <Title href="/map">Mapa</Title>
-                        </Section>
-                        <Section>
-                            <Title href="#">Fotos</Title>
+                            <Title href="#">Mapa</Title>
                         </Section>
                         <Section>
                             <Dialog.Root>

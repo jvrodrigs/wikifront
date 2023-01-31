@@ -5,6 +5,7 @@ import { Line } from "../../components/DividerLine";
 import { Barricade, Camera, WifiHigh } from "phosphor-react";
 import { Footer } from "../../components/Footer";
 import { Recents } from "../../components/Recents";
+import { MapAndPoints } from "../../components/Map";
 
 export function Page() {
     return(
@@ -89,6 +90,19 @@ export function Page() {
                    </Container>
                 </SectionContainer>
 
+                <Line side={true} />
+
+                <SectionContainer>
+                    <Container>
+                        <Grid>
+                            <header>
+                                <h3>Mapa</h3>
+                                <p>Pontos, os mais perto de acordo com a sua localização, que foram informados por nossos usuários.</p>
+                            </header>
+                        </Grid>
+                        <MapAndPoints />
+                    </Container>
+                </SectionContainer>
             </main>
             <Footer />
         </>

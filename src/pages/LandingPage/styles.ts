@@ -35,7 +35,7 @@ export const SectionContainer = styled.section<typeSection>`
     }
 
     @media (min-width: 1200px) {
-        padding: 10rem 0;
+        padding: 7rem 0;
 
         ${props => props.section == 'info' && css`
             div {

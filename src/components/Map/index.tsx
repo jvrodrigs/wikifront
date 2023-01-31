@@ -25,16 +25,12 @@ export function MapAndPoints() {
             height={600} 
             center={center}
         >
-            {points.map( (p) => {
-                return(
-                    <Marker key={p}
-                        width={50}
-                        anchor={center} 
-                        color={color} 
-                        onClick={() => setHue(hue + 20)} 
-                    />
-                )
-            })}
+            <Marker
+                width={50}
+                anchor={center} 
+                color={color} 
+                onClick={() => setHue(hue + 20)} 
+            />
         </Map>
     )
 }
